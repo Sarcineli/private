@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento do DOM exemplo 1</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //window.alert("Nosso primeiro alert")
+    //window.confirm("Confirme os dados")
+
+    // Solicita dois números do usuário
+    const n1 = Number.parseInt(window.prompt("Digite o primeiro número:")); // Converte para número
+    const n2 = Number.parseInt(window.prompt("Digite o segundo número:"));  // Converte para número
+    const sum = n1 + n2;
+    window.alert("A soma é: " + sum)
+
+    const nome = window.prompt("Digite seu nome: ").toUpperCase()
+    const sobrenome = window.prompt("Digite seu sobrenome: ").toUpperCase()
+    window.alert("Seu nome completo é: " + nome + ""+ sobrenome)
+</script>
+
+</html>

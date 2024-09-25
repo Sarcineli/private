@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo DOM6</title>
+</head>
+
+<body>
+    <ul id="lista">
+        <li>Produto</li>
+
+
+    </ul>
+
+    <ul class="LUL">
+        <li>Barcelona</li>
+
+    </ul>
+   
+
+</body>
+<script>
+   
+    let listDinamic = document.querySelector(".LUL");
+
+    let times = ["Flamengo", "Vasco", "Botafogo", "Fluminense"]
+
+    for (let i = 0; i < times.length; i++) {
+
+        let AD = document.createElement("li")
+         
+        AD.textContent = times[i];
+
+        listDinamic.appendChild(AD);
+        AD.style.border = "1px solid blue"
+
+    }
+
+
+
+
+
+</script>
+
+</html>

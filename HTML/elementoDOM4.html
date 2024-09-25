@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento DOM4</title>
+</head>
+
+<body>
+    <h1>Seletor do DOM</h1>
+    <ul>
+        <li>Java</li>
+        <li>Phyton</li>
+        <li>NodeJS</li>
+    </ul>
+    <div id="conteudo" class="mensagem">
+
+    </div>
+    <div name="divConteudo" class="mensagem">
+
+    </div>
+    <div name="divConteudo1" class="mensagem">
+
+    </div>
+
+    <span id="novospan" class="novo">
+            texto no span
+
+    </span>
+    <div class="mensagem">
+
+
+    </div>
+
+</body>
+<script>
+    elemento0 = document.getElementsByTagName('li')[0];
+    elemento0.style.color = 'blue'
+
+    elemento1 = document.getElementsByTagName('li')[1];
+    elemento1.style.background = 'red'
+
+    elemento2 = document.getElementsByTagName('li')[2];
+    elemento2.innerText = "Springboot"
+
+    elementoDiv = document.getElementById("conteudo")
+    elementoDiv.innerHTML = "<p>Colocando tag p dentro da div</p>"
+
+    elementoName = document.getElementsByName("divConteudo")[0];
+    elementoName.style.color = 'blue'
+    elementoName.innerText = "Colocando texto"
+
+    elementoMsg = document.getElementsByClassName("mensagem")[2];
+    elementoMsg.innerText = "incluindo..."
+    elementoMsg.style.color = 'green'
+
+    elementoSpanClass = document.querySelector('span.novo'); //permite que pegue o elemento span e a casa
+    elementoSpanClass.style.color = 'yellow'
+
+    elementoSeletor = document.querySelectorAll("mensagem")[2];
+    elementoSeletor.innerHTML = '<p> Texto incluído</p>'
+
+</script>
+
+</html>

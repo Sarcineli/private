@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com elemento</title>
+</head>
+
+<body>
+    <div class="estilo">
+        div com class="estilo"
+    </div>
+    <div class="estilo">
+        div com class="estilo"
+    </div>
+    <p class="estilo">elemento p com class="estilo"</p>
+    <p>Isso é <span class="estilo">elemento span</span>com class="estilo" dentro de um elemento</p>
+</body>
+<script>
+    let cls = document.getElementsByClassName("estilo");
+    // Itera(passa por todos) sobre a coleção e aplica os estilos a cada elemento
+    for (let i = 0; i < cls.length; i++) {
+        cls[i].style.background = 'blue';
+        cls[i].style.color = 'white';
+
+        // Modifica o texto para maiúsculas
+        cls[i].textContent = cls[i].textContent.toUpperCase();
+
+    }
+
+</script>
+
+</html>

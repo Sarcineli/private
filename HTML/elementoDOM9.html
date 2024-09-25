@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento DOM9</title>
+</head>
+
+<body>
+    <form name="formCadastro" onsubmit="validateForm()">
+        <label>Email</label>
+        <input  type="email" id="email" />
+
+        <labe>Nome</labe>
+        <input type="text" id="nome" />
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            let nomePessoa = document.forms["formCadastro"]['nome'].value;
+                if(nomePessoa == ""){
+                    alert("Preencha o nome")
+                    event.preventDefault();
+                }else{
+                    alert("Olá : " + nomePessoa);
+                    event.preventDefault(); //preventDefault se mantem na pagina atual
+                }
+        }
+    </script>
+</body>
+
+</html>

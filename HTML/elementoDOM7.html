@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento DOM6</title>
+    <script>
+        function exemploEvento() {
+            alert("mostrando o alert")
+        }
+
+
+        function passarMousePorCima() {
+            document.getElementById("Exemplo").innerHTML = "Evento com mouse over"
+        }
+
+        function tirarMouse() {
+            document.getElementById("Exemplo").innerHTML = "Evento com mouse out"
+
+        }
+    </script>
+</head>
+
+<body>
+    <p>Clique no botão a seguir</p>
+    <form>
+        <input type="button" onclick="exemploEvento()" value="Apresentando" />
+    </form>
+
+    <h1 id="Exemplo" onmouseover="passarMousePorCima()" onmouseout="tirarMouse()">Trocar texto</h1>
+</body>
+
+</html>
